@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "ff9d4443-1daa-4386-8fb8-4fc2a14924c2",
+		"name": "Hospital_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32764086"
+	},
+	"item": [
+		{
+			"name": "gethospitaldetail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hosp_id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3010/gethospitaldetail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"gethospitaldetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "oZEdclvAN/a1.jpg"
+						},
+						{
+							"key": "psyc_id",
+							"value": "5",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "patient_name",
+							"value": "Ayush ",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Address",
+							"value": "h3 narmada gwalior",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ayush123@gmail.com",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "918787878787",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Ayush1234",
+							"contentType": "application/json",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3010/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
