@@ -28,7 +28,15 @@
 
 	3. Database Insallation
 
-	   * Download the database SQL file from the `database` folder and run this file one by one.
+	   * Download the database SQL file from the `database` folder in ths sequence of
+
+	   		1. hospital_database.sql
+			2. hospital_table_hospitals.sql
+			3. hospital_table_patient.sql
+			4. hospital_table_psychiatrists.sql
+			5. hospital_extra.sql
+
+	    And run this file one by one.
 
 	   * Then Set up your MySQL database and update the connection details in index.js.
 

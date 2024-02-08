@@ -128,7 +128,7 @@ const validatePatientDetails = (patientData,file,hosp_id) => {
 app.post('/register', upload.any(),  (req, res) => {
 
     const data=req.body;
-    console.log("tesss",data,req.files[0].originalname)
+    // console.log("tesss",data,req.files[0].originalname)
 
     // Query to get hospital ID based on psyc_id
     conn.query('Select hosp_id from psychiatrists where psyc_id=(?)',[req.body.psyc_id],function(error, result){
